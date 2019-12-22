@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Creatify Task</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fjalla+One|Merriweather|Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51366e3625.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+        $(document).ready(function() {
+            $(".middle").hover(function() {
+                $("#port_img").css("opacity", ".3");
+            });
+
+            $('body').scrollspy({
+                target: ".navbar",
+                offset: 100
+            });
+            $(window).scroll(function() {
+                var scrollPos = $(window).scrollTop(),
+                    navbar = $('.navbar');
+
+                if (scrollPos > 300) {
+                    navbar.addClass('alt-color');
+                } else {
+                    navbar.removeClass('alt-color');
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="72">
+
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg  fixed-top navbar-dark  " style="background-color: #9B9B9B">
+        <a class="navbar-brand" href="#"></a>
+        <img src="img/logo1.png" class="p-4" id="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span  class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto pr-4 nav-menu sf-js-enabled sf-arrows " touch-action: pan-y;>
+                <li id="link-home" class="nav-item ">
+                    <a class="nav-link " href="#header">HOME</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">SERVICE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#vertical">VERTICAL AI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </nav>
+    <!--heeder-->
+    <header class="mathhead" id="header">
+        <div class="container align-items-center">
+            <div>
+                <div>
+                    <h1 id="prof" class="mx-auto text-center">
+                        <img src="img/dash.png"> Forward Thinking For
+
+                    </h1>
+                </div>
+                <div>
+                    <h1 class="wellcome">Your Better Income</h1>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div id="con-head">
+            <p>CONTACT</p>
+        </div>
+    </header>
+    <!--------------About------------>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 img-who">
+                    <img src="img/whoAreWe.png">
+                </div>
+                <div class="col-md-6 skills-bar">
+
+                    <div>
+                        <h1><img src="img/dash2.png">Who Are We ?</h1>
+
+                        <div class="about-content">
+                            Invo is a British company founded in 2018, we are delivering IT Solutions & Consultancy services. In a data driven world Our focus is to deliver the new era of IT Solutions to serve companies to digital tranformation and to keep the pace with the new
+                            technological jumps to deliver real benefit.
+                        </div>
+                        <button type="button" class="btn btn-primary">Read More</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!---------------Services-------------->
+    <section id="services">
+        <div class="row ">
+            <div class="col-md-4" style="padding: 0;margin-bottom: 3%;
+                margin-top: 9px;">
+
+
+                <ul class="big-one ">
+                    <li style=" width: 360px;
+                    height: 260px; padding: 0;
+                     background-color: #2B2C2B; ">
+                        <h3 class="heading"><span>Our Services</span></h3>
+                        <div class="card-body" style="height: 150px;
+                        width: 260px;
+                        background-color: aquamarine;
+                        margin-left: 20%;margin-top: 40%;
+                        box-shadow: 0px 3px 15px #00000029;
+                        background-color: #FFFFFF;"><img src="img/three.png">
+                            <div class="div-text-small">
+                                IT Outsourcing<i class="fas fa-arrow-right"></i>
+                                <p>Services</p>
+                            </div>
+                    </li>
+
+                </ul>
+
+
+
+                </div>
+                <div class=" col-md-4 " style="padding: 0;margin-right: -7%;">
+                    <ul style="list-style-type: none; ">
+                        <li>
+                            <div class="card-body "><img src="img/one.png">
+                                <div class="div-text">BI & AI Soluation<i class="fas fa-arrow-right"></i></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-body "><img src="img/four.png">
+                                <div class="div-text">Application Services<i class="fas fa-arrow-right"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 " style="padding: 0;">
+                    <ul style="list-style-type: none; ">
+                        <li style="background: #F7941D">
+                            <div class="card-body "><img src="img/two.png">
+                                <div class="div-text w3-white" style="color: white;">Elearning Solutions<i style="color: white;" class="fas fa-arrow-right"></i></div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="card-body "><img src="img/five.png">
+                                <div class="div-text">Consulting Services<i class="fas fa-arrow-right"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <!-----------------Our Partenrs----------->
+
+
+
+    <section id="partenrs">
+        <div class="container">
+            <div>
+                <h1><span>Our Partenrs</span></h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 profile-pic text-center">
+                    <div class="img-box img-size1">
+                        <img src="img/partners1.png" class="img-responsive">
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 profile-pic text-center">
+                    <div class="img-box img-size2">
+                        <img src="img/partners2.png" class="img-responsive">
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4 profile-pic text-center">
+                    <div class="img-box img-size3">
+                        <img src="img/partners3.png" class="img-responsive">
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!------>
+
+        </div>
+
+
+    </section>
+    <!--------------Vertical------------>
+
+    <section id="vertical">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 vertical-bar">
+
+                    <div>
+                        <h1 class="ver"><img src="img/dash2.png">What We Do I Vertical AI ?</h1>
+
+                        <div class="vertical-content">
+                            Invo is a British company founded in 2018, we are delivering IT Solutions & Consultancy services. In a data driven world Our focus is to deliver the new era of IT Solutions to serve companies to digital tranformation and to keep the pace with the new
+                            technological jumps to deliver real benefit Invo is a British company founded in 2018, we are delivering IT Solutions & Consultancy services. In a data driven world Our focus is to deliver the new era of IT Solutions to serve
+                            companies to digital tranformation and to keep the pace with the new technological jumps to deliver real benefit..
+                        </div>
+                        <button type="button" class="btn btn-primary">Read More</i></button>
+                    </div>
+                </div>
+                <div class="col-md-6 img-vertical">
+                    <img src="img/vertical.png">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!--------------OurCustomers------------>
+    <section id="customers">
+        <div class="container">
+            <div>
+                <h1><span>Our Customers</span></h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 customer-pic text-center">
+                    <div class="img-box-customer">
+                        <img src="img/customer1.png" class="img-responsive">
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 customer-pic text-center">
+                    <div class="img-box-customer">
+                        <img src="img/customer2.png" class="img-responsive">
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 customer-pic text-center">
+                    <div class="img-box-customer">
+                        <img src="img/customer3.png" class="img-responsive">
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 customer-pic text-center">
+                    <div class="img-box-customer">
+                        <img src="img/customer4.png" class="img-responsive">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+    <!---------------Together------------->
+    <section id="together">
+        <div class="container">
+            <h1>Let's Work Together !</h1>
+            <p>Get in touch with us to speak about your project</p>
+            <button type="button" class="btn btn-primary">Contact</i></button>
+        </div>
+    </section>
+
+    <!---------------contact------------->
+
+
+    <section id="contact" class="text-center p-5 mt-4 ">
+        <div class="container p-3">
+            <h3 class="text-white">SUBSCRIBE NOW</h3>
+            <form action="#" method="Post" class="contact">
+                <input type="text" name="text" placeholder="Enter Your Email Id">
+                <button type="button" class="btn ">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-------------footer------>
+    <section id="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4">
+                    <h1><img style="width: 50%;" src="img/logo2.png"></h1>
+
+
+                    <p class="col1">
+                        Invo is a British company founded in 2018, we are delivering IT Solutions & Consultancy services.
+                    </p>
+
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick links</h3>
+                    <div class="row  colum2">
+                        <div id="col2" class="col-md-6 ">
+                            <ul class="list-styled quick-links">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vertcial AI </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-styled quick-links">
+                                <li>
+                                    <a href="#">Service</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <h3>Socail Media</h3>
+                    <ul class=" left">
+                        <li>
+                            <a href="#"> <img src="img/twitter.png"></a>
+                        </li>
+                        <li class="list2">
+                            <a href="#"><img src="img/facebook.png"></a>
+                        </li>
+                        <li class="list2">
+                            <a href="#"><img src="img/wifi.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" style="border-top: 1px solid white; margin: 20px;">
+
+            </div>
+
+            <div class="row ">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+
+                    <p class="h6">Copyright&copy2019</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
